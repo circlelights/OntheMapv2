@@ -38,9 +38,9 @@
 		0818C34A244A9F62004CF8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0818C34C244A9F62004CF8CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0818C34F244A9F62004CF8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0818C351244A9F64004CF8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0818C351244A9F64004CF8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		0818C354244A9F64004CF8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0818C356244A9F64004CF8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0818C356244A9F64004CF8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		0818C35B244A9F64004CF8CF /* OntheMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OntheMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0818C35F244A9F64004CF8CF /* OntheMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OntheMapTests.swift; sourceTree = "<group>"; };
 		0818C361244A9F64004CF8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,11 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				0818C34A244A9F62004CF8CF /* AppDelegate.swift */,
-				0818C34C244A9F62004CF8CF /* ViewController.swift */,
-				0818C34E244A9F62004CF8CF /* Main.storyboard */,
-				0818C351244A9F64004CF8CF /* Assets.xcassets */,
-				0818C353244A9F64004CF8CF /* LaunchScreen.storyboard */,
-				0818C356244A9F64004CF8CF /* Info.plist */,
+				0818C379245195A2004CF8CF /* Controller */,
+				0818C37824519588004CF8CF /* View */,
 			);
 			path = OntheMap;
 			sourceTree = "<group>";
@@ -123,6 +120,25 @@
 				0818C36C244A9F64004CF8CF /* Info.plist */,
 			);
 			path = OntheMapUITests;
+			sourceTree = "<group>";
+		};
+		0818C37824519588004CF8CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0818C34E244A9F62004CF8CF /* Main.storyboard */,
+				0818C351244A9F64004CF8CF /* Assets.xcassets */,
+				0818C353244A9F64004CF8CF /* LaunchScreen.storyboard */,
+				0818C356244A9F64004CF8CF /* Info.plist */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0818C379245195A2004CF8CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0818C34C244A9F62004CF8CF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
